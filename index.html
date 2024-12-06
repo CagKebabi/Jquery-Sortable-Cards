@@ -8,129 +8,146 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Document</title>
+    <style>
+          #sortable li { 
+            /* float: left;  */
+        }
+    </style>
 </head>
 <body>
     <div class="body-section">
-        <div class="jobs-list-wrapper">
-            <div class="jobs-list">
-                <h2 class="jobs-list-heading">YENİ EKLENEN</h2>
-                <div class="jobs-list-body" id="new-jobs">
-                    <ul id="new-jobs-list " class="draggableContainer">
-                        <li>
-                            <div class="job-block" id="new-job-test">
-                                <div class="job-name-block">
-                                    <div class="job-name">Artiste Logo</div>
-                                    <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+        <div class="jobs-list-wrapper ui-sortable" id="sortable">
+            <div class="">
+                <div class="jobs-list">
+                    <h2 class="jobs-list-heading">YENİ EKLENEN</h2>
+                    <div class="jobs-list-body" id="new-jobs">
+                        <ul id="new-jobs-list " class="draggableContainer">
+                            <li>
+                                <div class="job-block" id="new-job-test">
+                                    <div class="job-name-block">
+                                        <div class="job-name">Artiste Logo</div>
+                                        <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+                                    </div>
+                                    <div class="job-info-block">
+                                        <div class="job-date">14 Feb</div>
+                                        <div class="user-email">codepen@gmail.com</div>
+                                    </div>
                                 </div>
-                                <div class="job-info-block">
-                                    <div class="job-date">14 Feb</div>
-                                    <div class="user-email">codepen@gmail.com</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jobs-list-footer"></div>
                 </div>
-                <div class="jobs-list-footer"></div>
             </div>
-            <div class="jobs-list">
-                <h2 class="jobs-list-heading">YAPILIYOR</h2>
-                <div class="jobs-list-body" id="in-progress">
-                    <ul id="in-progress-list " class="draggableContainer">
-                        <li>
-                            <div class="job-block" id="in-progress-test">
-                                <div class="job-name-block">
-                                    <div class="job-name">Corporate Logo</div>
-                                    <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+            <div class="">
+                <div class="jobs-list">
+                    <h2 class="jobs-list-heading">YAPILIYOR</h2>
+                    <div class="jobs-list-body" id="in-progress">
+                        <ul id="in-progress-list " class="draggableContainer">
+                            <li>
+                                <div class="job-block" id="in-progress-test">
+                                    <div class="job-name-block">
+                                        <div class="job-name">Corporate Logo</div>
+                                        <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+                                    </div>
+                                    <div class="job-info-block">
+                                        <div class="job-date">21 Apr</div>
+                                        <div class="user-email">test@gmail.com</div>
+                                    </div>
                                 </div>
-                                <div class="job-info-block">
-                                    <div class="job-date">21 Apr</div>
-                                    <div class="user-email">test@gmail.com</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jobs-list-footer"></div>
                 </div>
-                <div class="jobs-list-footer"></div>
             </div>
-            <div class="jobs-list">
-                <h2 class="jobs-list-heading">BEKLEYEN</h2>
-                <div class="jobs-list-body" id="waiting">
-                    <ul id="waiting-jobs-list " class="draggableContainer">
-                        <li>
-                            <div class="job-block" id="waiting-job-test">
-                                <div class="job-name-block">
-                                    <div class="job-name">Brochure Design</div>
-                                    <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+            <div class="">
+                <div class="jobs-list">
+                    <h2 class="jobs-list-heading">BEKLEYEN</h2>
+                    <div class="jobs-list-body" id="waiting">
+                        <ul id="waiting-jobs-list " class="draggableContainer">
+                            <li>
+                                <div class="job-block" id="waiting-job-test">
+                                    <div class="job-name-block">
+                                        <div class="job-name">Brochure Design</div>
+                                        <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+                                    </div>
+                                    <div class="job-info-block">
+                                        <div class="job-date">01 Nov</div>
+                                        <div class="user-email">little@gmail.com</div>
+                                    </div>
                                 </div>
-                                <div class="job-info-block">
-                                    <div class="job-date">01 Nov</div>
-                                    <div class="user-email">little@gmail.com</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jobs-list-footer"></div>
                 </div>
-                <div class="jobs-list-footer"></div>
             </div>
-            <div class="jobs-list">
-                <h2 class="jobs-list-heading">TAMAMLANAN</h2>
-                <div class="jobs-list-body" id="complete">
-                    <ul id="complete-jobs-list " class="draggableContainer">
-                        <li>
-                            <div class="job-block" id="complete-jobs-test">
-                                <div class="job-name-block">
-                                    <div class="job-name">Artwork Design</div>
-                                    <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+            <div class="">
+                <div class="jobs-list">
+                    <h2 class="jobs-list-heading">TAMAMLANAN</h2>
+                    <div class="jobs-list-body" id="complete">
+                        <ul id="complete-jobs-list " class="draggableContainer">
+                            <li>
+                                <div class="job-block" id="complete-jobs-test">
+                                    <div class="job-name-block">
+                                        <div class="job-name">Artwork Design</div>
+                                        <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+                                    </div>
+                                    <div class="job-info-block">
+                                        <div class="job-date">16 Mar</div>
+                                        <div class="user-email">flipper@test.com</div>
+                                    </div>
                                 </div>
-                                <div class="job-info-block">
-                                    <div class="job-date">16 Mar</div>
-                                    <div class="user-email">flipper@test.com</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jobs-list-footer"></div>
                 </div>
-                <div class="jobs-list-footer"></div>
             </div>
-            <div class="jobs-list">
-                <h2 class="jobs-list-heading">REVİZE</h2>
-                <div class="jobs-list-body" id="rework">
-                    <ul id="rework-jobs-list " class="draggableContainer">
-                        <li>
-                            <div class="job-block" id="rework-job-test">
-                                <div class="job-name-block">
-                                    <div class="job-name">Business Cards</div>
-                                    <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+            <div class="">
+                <div class="jobs-list">
+                    <h2 class="jobs-list-heading">REVİZE</h2>
+                    <div class="jobs-list-body" id="rework">
+                        <ul id="rework-jobs-list " class="draggableContainer">
+                            <li>
+                                <div class="job-block" id="rework-job-test">
+                                    <div class="job-name-block">
+                                        <div class="job-name">Business Cards</div>
+                                        <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+                                    </div>
+                                    <div class="job-info-block">
+                                        <div class="job-date">26 Jun</div>
+                                        <div class="user-email">rework@es.com</div>
+                                    </div>
                                 </div>
-                                <div class="job-info-block">
-                                    <div class="job-date">26 Jun</div>
-                                    <div class="user-email">rework@es.com</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jobs-list-footer"></div>
                 </div>
-                <div class="jobs-list-footer"></div>
             </div>
-            <div class="jobs-list">
-                <h2 class="jobs-list-heading">GERİ DÖNÜŞ</h2>
-                <div class="jobs-list-body" id="feedback">
-                    <ul id="feedback-jobs-list" class="draggableContainer">
-                        <li>
-                            <div class="job-block" id="feedback-job-test">
-                                <div class="job-name-block">
-                                    <div class="job-name">Video Animation</div>
-                                    <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+            <div class="">
+                <div class="jobs-list">
+                    <h2 class="jobs-list-heading">GERİ DÖNÜŞ</h2>
+                    <div class="jobs-list-body" id="feedback">
+                        <ul id="feedback-jobs-list" class="draggableContainer">
+                            <li>
+                                <div class="job-block" id="feedback-job-test">
+                                    <div class="job-name-block">
+                                        <div class="job-name">Video Animation</div>
+                                        <div class="job-edit"><img class="edit-job-icon" src="https://image.flaticon.com/icons/svg/61/61456.svg"></div>
+                                    </div>
+                                    <div class="job-info-block">
+                                        <div class="job-date">31 Dec</div>
+                                        <div class="user-email">memory@feedbac.com</div>
+                                    </div>
                                 </div>
-                                <div class="job-info-block">
-                                    <div class="job-date">31 Dec</div>
-                                    <div class="user-email">memory@feedbac.com</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jobs-list-footer"></div>
                 </div>
-                <div class="jobs-list-footer"></div>
             </div>
         </div>
     </div>

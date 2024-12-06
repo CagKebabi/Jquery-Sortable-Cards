@@ -11,6 +11,10 @@
     // })    
 
     // let arr = []
+    $( function() {
+      $( "#sortable" ).sortable();
+      $( "#sortable" ).disableSelection();
+    } );
 
     draggableContainers.forEach((element,index) => {
         //console.log(draggableContainersIds.filter(e => e !== element.id));
